@@ -6,9 +6,9 @@ import DarkModeSwitch from "./DarkModeSwitch";
 
 export default function Header() {
   return (
-    <div className="flex justify-between items-center p-3 max-w-6xl mx-auto">
+    <div className="flex justify-between items-center p-4 max-w-6xl mx-auto">
 
-      <div className="flex gap-3 items-center">
+      <div className="flex gap-4 items-center">
         <MenuItem title='home' address='/' Icon={IoMdHome} />
         <MenuItem title='about' address='/about' Icon={FaCircleInfo} />
       </div>
