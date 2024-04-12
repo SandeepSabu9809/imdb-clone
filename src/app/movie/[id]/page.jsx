@@ -12,6 +12,7 @@ export default async function Movie({params}) {
       <div className='p-4 md:pt-8 flex flex-col md:flex-row content-center max-w-6xl mx-auto md:space-x-6'>
         <Image 
             src={`https://image.tmdb.org/t/p/original/${movie.backdrop_path || movie.poster_path}`} 
+            alt={movie.title || movie.name}
             width={500}
             height={300}
             className='rounded-lg'

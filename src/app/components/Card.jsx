@@ -12,6 +12,7 @@ export default function Card({result}) {
      <div className="relative" style={{ paddingBottom: '56%' }}>
           <Image
             src={`https://image.tmdb.org/t/p/original/${result.backdrop_path || result.poster_path}`}
+            alt={result.title || result.name}
             layout="fill"
             objectFit="cover"
             className="sm:rounded-t-lg hover:opacity-75 transition-opacity duration-300"
